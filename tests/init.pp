@@ -9,4 +9,14 @@
 # Learn more about module testing here:
 # http://docs.puppetlabs.com/guides/tests_smoke.html
 #
-include beanstalkd
+class { 'beanstalkd':
+  listen_addr      => "127.0.0.1",
+  listen_port      => "11300",
+  enable_binlog    => false,
+  binlog_directory => "/var/lib/beanstalkd",
+  package_ensure   => "present",
+  service_ensure   => "running",
+  service_enable   => true,
+  user             => "beanstalkd",
+  max_job_size     => "65535",
+}
