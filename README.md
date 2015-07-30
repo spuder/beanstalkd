@@ -1,4 +1,7 @@
 # beanstalkd
+[![Puppet Forge](http://img.shields.io/puppetforge/v/jbowers/beanstalkd.svg)](https://forge.puppetlabs.com/jbowers/beanstalkd) [![Build Status](https://travis-ci.org/spuder/beanstalkd.png)](https://travis-ci.org/spuder/beanstalkd)
+
+todo: Change status ^ to point to acutal repo, not fork
 
 #### Table of Contents
 
@@ -79,7 +82,7 @@ Whether to enable binlogging. Defaults to false. Other value is true.
 
 ####`binlog_directory`
 If binlogging is enabled, specify the directory that the beanstalkd binlog
-will log to. Defaults to '/var/lib/beanstalkd' on Debian families and 
+will log to. Defaults to '/var/lib/beanstalkd' on Debian families and
 '/var/lib/beanstalkd/binlog' on RedHat families.
 
 ####`package_ensure`
@@ -103,7 +106,7 @@ Maximum size in bytes that beanstalkd allows for a job. Defaults to '65535'.
 ## Limitations
 
 This module currently is tested using Ubuntu 14.04, 12.04 as well as CentOS 6,
-and Debian 7. The EPEL module is required for RedHat families to install 
+and Debian 7. The EPEL module is required for RedHat families to install
 beanstalkd.
 
 ## Development
