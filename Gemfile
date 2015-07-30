@@ -10,3 +10,7 @@ gem 'puppetlabs_spec_helper', '>= 0.1.0'
 #   gem 'beaker-rspec', :require => false
 #   gem 'beaker-puppet_install_helper', :require => false
 # end
+
+gem 'guard'
+gem 'guard-rspec'
+gem 'pry'
